@@ -1,11 +1,11 @@
 #!/bin/bash
 #
-# Quick and dirty extracter to get the EC image out of the iso file
+# Quick and dirty encryptor
 # Copyright (C) 2016 Hamish Coleman
 #
 # TODO:
 # - a tool that is portable to Windows
-# - should output dependancy information
+# - should output dependency information
 
 INP="$1"
 if [ -z "$INP" ]; then

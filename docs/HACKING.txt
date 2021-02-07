@@ -15,7 +15,7 @@ To use the radare projects, first install the project files:
 
 Then ensure you have the image file(s):
 
-    make x220.8DHT34WW.img x230.G2HT35WW.img x260.R02HT29W.img 
+    make x200.7XHT24WW.img x220.8DHT34WW.img x230.G2HT35WW.img x260.R02HT29W.img
 
 Then start radare with one of these projects:
 
@@ -27,7 +27,10 @@ Makefile targets:
 If you expect to do development work, the following make targets are
 probably useful:
 
-    To list the available raw image files and FL2 files:
+    To list the available raw image files and FL2 files, check the
+    Descriptions.txt file for the list of known image names.  You
+    can also get a list of the "*.img.d" directories that contain
+    patches with this make command:
 
         make list_images
 
@@ -37,7 +40,7 @@ probably useful:
         make x230.G2HT35WW.img
 
     To just get the decrypted firmware file (with the same filename as
-    above), before any patches applied, the pseudo
+    above), before any patches applied:
 
         make x230.G2HT35WW.img.prepatch
 
@@ -49,7 +52,7 @@ probably useful:
     the dosflash.exe utility to a DOS boot disk and then use a command
     similar to:
 
-        
+
         dosflash /sd /ipf ec /file s01D3000.FL2
 
     To insert the firmware image back into the bootable cdrom and boot this
@@ -67,4 +70,3 @@ References:
     http://forum.thinkpads.com/viewtopic.php?f=69&t=120776
     http://www.zmatt.net/unlocking-my-lenovo-laptop-part-3/
     http://plan9.stanleylieber.com/hardware/thinkpad/x230/x230.schematics.pdf
-

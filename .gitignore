@@ -2,6 +2,7 @@
 # ignore the files that we do not have clear permission to distribute
 *.iso
 *.iso.orig
+*.txt.orig
 *.img
 *.img.orig
 *.img.enc
@@ -11,6 +12,9 @@
 
 # ignore generated files
 *.bat
+*.diff
+.d
+.mec-tools_build_ok
 
 # Temp are (should be) just junk
 *.tmp
